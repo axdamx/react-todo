@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { TiEdit } from "react-icons/ti";
 import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
 
 function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
   const [edit, setEdit] = useState({ id: null, value: "" });
+  console.log(edit);
 
   const submitUpdate = (value) => {
     updateTodo(edit.id, value);
